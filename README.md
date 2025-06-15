@@ -79,3 +79,16 @@ if this fixes your issue please file a pull request.
 
 microsocks uses the smallest safe thread stack size to minimize overall memory
 usage.
+
+Build and Run
+---------------
+
+```bash
+sudo apt install git build-essential -y
+git clone https://github.com/rofl0r/microsocks.git
+cd microsocks
+make
+sudo make install
+
+microsocks -1 -i 0.0.0.0 -p 1080 -u proxyuser -P secret123
+```
